@@ -13,7 +13,7 @@ const Navbar = () => {
                 <img
                   src="/image/my_Logo.png"
                   alt="logo"
-                  className="w-36 h-32 mx-28 "
+                  className="w-36 h-32 md:mx-28 "
                 />
               </a>
             </div>
@@ -24,22 +24,24 @@ const Navbar = () => {
                   onClick={() => setOpen(!open)}
                   // :className="navbarOpen && 'navbarTogglerActive' "
                   id="navbarToggler"
-                  className={` ${open && "navbarTogglerActive"
+                  className={` ${open && "opened"
                     } absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden`}
                 >
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">Home</span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">About</span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">Our Idea</span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">Categories</span>
-                  <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color">FAQs</span>
+                  <svg width="40" height="40" viewBox="0 0 100 100" fill="black" stroke="black">
+                        <path className="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path className="line line2" d="M 20,50 H 80" />
+                        <path className="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
                 </button>
                 <nav
                   // :className="!navbarOpen && 'hidden' "
                   id="navbarCollapse"
-                  className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${!open && "hidden"
+                  className={`absolute bg-white/50 backdrop-blur-md right-0 top-full max-md:h-[100vh] left-0 w-full maxw-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${!open && "hidden"
                     } `}
                 >
-                  <ul className="block lg:flex text-blue-600 ">
+                  <ul className="flex max-md:flex-col items-center justify-between h-3/4 text-blue-600 ">
                     <ListItem
                       navItemStyles="text-dark"
                       NavLink="/#home"

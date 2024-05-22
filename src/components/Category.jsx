@@ -35,12 +35,12 @@ const Card = () => {
         </div>
       </section>
     */}
-      <section class="text-gray-700 pr-16 pl-16 body-font">
+      <section id="categories" class="text-gray-700 pr-16 pl-16 pt-24 body-font">
         <div class="container px-5 py-20 mx-auto">
                 <div className="text-5xl font-semibold text-center" >𝙲𝙰𝚂𝙴 𝙲𝙰𝚃𝙴𝙶𝙾𝚁𝙸𝙴𝚂</div>
           <br /><br />
-          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-            <div class="p-4 md:w-1/3 border-neutral-300 rounded-xl border-2 sm:mb-0 mb-6">
+          <div class="flex lex-wrap gap-6 sm:-m-4 -mx-4 -mb-10 -mt-4 ">
+            <div class="p-4 border-neutral-300 rounded-xl border-2 sm:mb-0 mb-6">
               <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full"
                   src="https://t3.ftcdn.net/jpg/02/01/85/16/360_F_201851665_Sq1AxtGX4YhtUY8T0xXV7pWnz0ppHdbZ.jpg"></img>
@@ -54,7 +54,7 @@ const Card = () => {
                 </svg>
               </a>
             </div>
-            <div class="p-4 md:w-1/3 border-neutral-300 rounded-xl border-2 sm:mb-0 mb-6">
+            <div class="p-4 border-neutral-300 rounded-xl border-2 sm:mb-0 mb-6">
               <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full"
                   src="https://gumlet.assettype.com/barandbench%2F2022-01%2Ff68ec081-f6e7-46e6-b82c-07fb30e85c43%2F17.jpg?format=auto"></img>
@@ -70,7 +70,7 @@ const Card = () => {
                 </svg>
               </a>
             </div>
-            <div class="p-4 border-neutral-300  rounded-xl border-2 md:w-1/3 sm:mb-0 mb-6">
+            <div class="p-4 border-neutral-300  rounded-xl border-2 sm:mb-0 mb-6">
               <div class="rounded-lg h-64 overflow-hidden">
                 <img alt="content" class="object-cover object-center h-full w-full"
                   src="https://gumlet.assettype.com/barandbench%2Fimport%2F2019%2F02%2FPENDING-CASES-3.jpg?auto=format%2Ccompress&fit=max&w=400&dpr=2.6"></img>

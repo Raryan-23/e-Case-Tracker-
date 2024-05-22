@@ -3,7 +3,7 @@ import React from "react";
 const Vision = () => {
   return (
     <>
-      <section id="vision" className="pr-20 pl-28 lg:pt-[120px] lg:pb-[90px] overflow-hidden">
+      <section id="vision" className="pr-20 pl-28 lg:pt-[120px] overflow-hidden">
         <div className="container">
           <div className="flex flex-wrap items-center justify-between -mx-4">
             <div className="w-full px-4 lg:w-6/12">
